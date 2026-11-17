@@ -1,0 +1,265 @@
+{
+  "education": [
+    {
+      "title": "Ingeniería de Software con Inteligencia Artificial",
+      "org": "SENATI C.F.P. Huancayo · Programa de Aprendizaje Dual",
+      "date": "4.º semestre · en curso (noviembre de 2026)",
+      "desc": "Formación técnica en software e inteligencia artificial.",
+      "title_en": "Software Engineering with Artificial Intelligence",
+      "org_en": "SENATI Huancayo · Dual Learning Program",
+      "date_en": "4th semester · in progress (November 2026)",
+      "desc_en": "Technical studies focused on software and AI; degree not yet completed."
+    },
+    {
+      "title": "Ingeniería de Sistemas e Informática (estudios previos)",
+      "org": "Universidad Tecnológica del Perú — UTP",
+      "date": "Estudios no culminados",
+      "desc": "Cursos universitarios cursados antes de ingresar a SENATI.",
+      "title_en": "Systems and Informatics Engineering (previous studies)",
+      "org_en": "Universidad Tecnológica del Perú — UTP",
+      "date_en": "Unfinished studies",
+      "desc_en": "Previously completed university courses prior to entering SENATI."
+    }
+  ],
+  "certs": [
+    {
+      "title": "Java Foundations — Finalización de curso",
+      "org": "Oracle Academy",
+      "date": "abril 2026",
+      "url": "certificados/oracle_java_foundations.pdf",
+      "date_en": "April 2026",
+      "title_en": "Java Foundations — Course Completion",
+      "category": "programacion",
+      "featured": true,
+      "preview": "imagenes/cert_java.webp"
+    },
+    {
+      "title": "Introducción a la Ciencia de Datos",
+      "org": "Cisco",
+      "date": "marzo 2025",
+      "url": "certificados/cisco_ciencia_datos.pdf",
+      "date_en": "March 2025",
+      "title_en": "Introduction to Data Science",
+      "category": "datos",
+      "featured": true,
+      "preview": "imagenes/cert_datos.webp"
+    },
+    {
+      "title": "Hacker ético",
+      "org": "Cisco Networking Academy",
+      "date": "junio 2026",
+      "url": "certificados/cisco_hacker_etico.pdf",
+      "date_en": "June 2026",
+      "title_en": "Ethical Hacker",
+      "category": "ciberseguridad",
+      "featured": true,
+      "preview": "imagenes/cert_hacker.webp"
+    },
+    {
+      "title": "Introducción a la Ciberseguridad",
+      "org": "Cisco",
+      "date": "abril 2025",
+      "url": "certificados/cisco_ciberseguridad.pdf",
+      "date_en": "April 2025",
+      "title_en": "Introduction to Cybersecurity",
+      "category": "ciberseguridad",
+      "featured": false,
+      "preview": ""
+    },
+    {
+      "title": "Conceptos básicos de redes",
+      "org": "Cisco",
+      "date": "junio 2025",
+      "url": "certificados/cisco_redes.pdf",
+      "date_en": "June 2025",
+      "title_en": "Networking Basics",
+      "category": "redes",
+      "featured": false,
+      "preview": ""
+    },
+    {
+      "title": "Introducción al Internet de las Cosas y Transformación Digital",
+      "org": "Cisco",
+      "date": "marzo 2025",
+      "url": "certificados/cisco_iot.pdf",
+      "date_en": "March 2025",
+      "title_en": "Introduction to IoT and Digital Transformation",
+      "category": "redes",
+      "featured": false,
+      "preview": ""
+    },
+    {
+      "title": "Conceptos Básicos de Hardware de Computadora",
+      "org": "Cisco",
+      "date": "febrero 2025",
+      "url": "certificados/cisco_hardware.pdf",
+      "date_en": "February 2025",
+      "title_en": "Computer Hardware Basics",
+      "category": "soporte",
+      "featured": false,
+      "preview": ""
+    },
+    {
+      "title": "Uso de Computadoras y Dispositivos Móviles",
+      "org": "Cisco",
+      "date": "marzo 2025",
+      "url": "certificados/cisco_dispositivos_moviles.pdf",
+      "date_en": "March 2025",
+      "title_en": "Using Computers and Mobile Devices",
+      "category": "soporte",
+      "featured": false,
+      "preview": ""
+    },
+    {
+      "title": "Create Digital Content, Communicate and Collaborate Online",
+      "org": "Cisco",
+      "date": "marzo 2025",
+      "url": "certificados/cisco_contenido_digital.pdf",
+      "date_en": "March 2025",
+      "category": "digital",
+      "featured": false,
+      "preview": ""
+    },
+    {
+      "title": "Conciencia digital",
+      "org": "Cisco",
+      "date": "febrero 2025",
+      "url": "certificados/cisco_conciencia_digital.pdf",
+      "date_en": "February 2025",
+      "title_en": "Digital Awareness",
+      "category": "digital",
+      "featured": false,
+      "preview": ""
+    },
+    {
+      "title": "Get Connected",
+      "org": "Cisco",
+      "date": "marzo 2022",
+      "url": "certificados/cisco_get_connected.pdf",
+      "date_en": "March 2022",
+      "category": "digital",
+      "featured": false,
+      "preview": ""
+    }
+  ],
+  "jobs": [
+    {
+      "title": "Practicante de soporte técnico",
+      "org": "Empresa de venta y soporte de computadoras · Huancayo",
+      "date": "Julio de 2026 – actualidad",
+      "desc": "Instalación y configuración de Windows y aplicaciones; mantenimiento y diagnóstico de laptops e impresoras; atención de incidencias técnicas.",
+      "title_en": "IT Support Intern",
+      "org_en": "Computer sales and support company · Huancayo",
+      "date_en": "July 2026 – present",
+      "desc_en": "Windows and software installation and configuration; laptop and printer maintenance and diagnostics; technical troubleshooting."
+    },
+    {
+      "title": "Atención al cliente (fines de semana)",
+      "org": "Cevichería El Limoncito Borracho",
+      "date": "2025 – actualidad",
+      "desc": "Toma de pedidos, atención al público y colaboración en el servicio.",
+      "title_en": "Customer Service (weekends)",
+      "org_en": "Cevichería El Limoncito Borracho",
+      "date_en": "2025 – present",
+      "desc_en": "Taking orders, assisting customers, and supporting service operations."
+    },
+    {
+      "title": "Atención al cliente",
+      "org": "Pollería Fogones",
+      "date": "2024",
+      "desc": "Atención al público, gestión de pedidos y apoyo en el salón.",
+      "title_en": "Customer Service",
+      "org_en": "Pollería Fogones",
+      "date_en": "2024",
+      "desc_en": "Customer assistance and order handling."
+    },
+    {
+      "title": "Ayudante de ventas",
+      "org": "Ferretería Henry",
+      "date": "2024",
+      "desc": "Atención al cliente, manejo de caja y apoyo al inventario.",
+      "title_en": "Sales Assistant",
+      "org_en": "Ferretería Henry",
+      "date_en": "2024",
+      "desc_en": "Customer assistance, cashier duties, and stock support."
+    }
+  ],
+  "profile": {
+    "headline": "Estudiante de Software e Inteligencia Artificial",
+    "intro": "Actualmente realizo prácticas de soporte técnico y estoy fortaleciendo mis bases de programación. Busco dar el siguiente paso hacia prácticas de desarrollo de software y aprender con proyectos reales.",
+    "about": "Estudio Ingeniería de Software con Inteligencia Artificial en el Programa de Aprendizaje Dual de SENATI Huancayo. Tengo experiencia en instalación, configuración y mantenimiento de equipos. También estoy aprendiendo programación y documentando mis proyectos en GitHub.",
+    "availability": "Busco prácticas de desarrollo de software, preferentemente remotas.",
+    "headline_en": "Software & AI Student",
+    "intro_en": "I am currently gaining hands-on experience in IT support while building my programming skills. I am seeking an opportunity to grow in software development through real projects.",
+    "about_en": "I study Software Engineering with Artificial Intelligence at SENATI in Huancayo, Peru, through a dual-learning program. My current experience includes installing, configuring, and maintaining computers. I am learning programming and documenting projects on GitHub.",
+    "availability_en": "Open to software development internships, preferably remote."
+  },
+  "projects": [
+    {
+      "title": "Kit de Soporte Leonhardt",
+      "desc": "Aplicación de escritorio para preparar equipos Windows: selección de instaladores, seguimiento del proceso, registros y utilidades técnicas. Captura real de la interfaz; continúo probando y mejorando el kit.",
+      "stack": [
+        "PowerShell",
+        "Windows",
+        "Automatización",
+        "Interfaz de escritorio"
+      ],
+      "status": "En desarrollo",
+      "url": "",
+      "title_en": "Leonhardt Support Toolkit",
+      "desc_en": "Desktop toolkit for preparing Windows computers: installer selection, progress monitoring, logs, and technical utilities. Real interface screenshot; testing and improvements are ongoing.",
+      "status_en": "In development",
+      "image": "imagenes/kit_leonhardt.png",
+      "gallery": [
+        "imagenes/kit_archivos.png"
+      ],
+      "image_alt": "Captura del Kit de Soporte Leonhardt con selección de instaladores y registro de actividad",
+      "image_alt_en": "Leonhardt Support Toolkit interface with installer selection and activity logs"
+    },
+    {
+      "title": "App de hábitos y objetivos",
+      "desc": "Prototipo móvil de seguimiento de hábitos personales. Las capturas reales muestran registro diario, rachas, progreso, historial, calendario y resumen semanal. El proyecto sigue en desarrollo: widgets, respaldo y otras mejoras están pendientes de validar.",
+      "stack": [
+        "Kotlin",
+        "Jetpack Compose",
+        "Android (prototipo)"
+      ],
+      "status": "En desarrollo",
+      "url": "",
+      "title_en": "Habits & Goals Android App",
+      "desc_en": "Personal habit-tracking mobile app prototype. Real screenshots show daily logging, streaks, progress, history, calendar and weekly summaries. Still in development: widgets, backup and other improvements require further validation.",
+      "status_en": "In development",
+      "image": "imagenes/app_habitos_portada.webp",
+      "image_alt": "Vista principal del prototipo de la app de hábitos, con resumen de metas y registro diario",
+      "gallery": [
+        "imagenes/app_habitos_inicio.webp",
+        "imagenes/app_habitos_detalle.webp",
+        "imagenes/app_habitos_resumen.webp"
+      ],
+      "image_alt_en": "Main screen of the habits app prototype showing goals and daily tracking"
+    },
+    {
+      "title": "Portafolio web personal",
+      "desc": "Portafolio responsive con versión en español e inglés, certificados y una sección de administración para actualizar contenido mediante GitHub.",
+      "stack": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "GitHub Pages"
+      ],
+      "status": "En evolución",
+      "url": "https://github.com/Mr-LuisEd/mi-primer-portafolio",
+      "title_en": "Personal Portfolio Website",
+      "desc_en": "Responsive portfolio with Spanish and English versions, certificates, and an administration page for managing content through GitHub.",
+      "status_en": "Evolving",
+      "image": "imagenes/portafolio_web.png",
+      "image_alt": "Vista de una versión anterior del portafolio web",
+      "image_alt_en": "Screenshot of an earlier version of the portfolio website"
+    }
+  ],
+  "brand": {
+    "name": "Leonhardt",
+    "signature": "M.R.Luis",
+    "mark": "MRL"
+  }
+}

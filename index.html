@@ -1,23 +1,363 @@
-
 <!DOCTYPE html>
+
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Mi primer portafolio</title>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Luis Eduardo Mendoza | Estudiante de Software e IA</title>
+<meta content="website" property="og:type"/>
+<meta content="es_PE" property="og:locale"/>
+<meta content="Luis Eduardo Mendoza Roman · MRL / Leonhardt" property="og:title"/>
+<meta content="Portafolio de desarrollo de software, soporte técnico, proyectos y certificaciones." property="og:description"/>
+<meta content="https://mr-luised.github.io/mi-primer-portafolio/imagenes/portada-compartir.jpg" property="og:image"/>
+<meta content="https://mr-luised.github.io/mi-primer-portafolio/" property="og:url"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<link href="https://mr-luised.github.io/mi-primer-portafolio/" rel="canonical"/>
+<meta content="#050b1a" name="theme-color"/>
+<meta content="Portafolio de Luis Eduardo Mendoza, estudiante de Ingeniería de Software con IA en SENATI Huancayo. Experiencia en soporte técnico, proyectos en desarrollo y formación continua." name="description"/>
+<link href="data:image/svg+xml,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;rect width=%22100%22 height=%22100%22 rx=%2222%22 fill=%22%233b82f6%22/&gt;&lt;text x=%2250%22 y=%2271%22 font-size=%2256%22 font-family=%22Arial%22 font-weight=%22700%22 text-anchor=%22middle%22 fill=%22white%22&gt;&lt;/&gt;&lt;/text&gt;&lt;/svg&gt;" rel="icon"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<style>
+:root{--bg:#050b1a;--bg2:#08132a;--card:#0b1731;--line:#1b2c52;--ink:#e9efff;--mut:#9aabcc;--acc:#3b82f6;--acc2:#818cf8;--sky:#60a5fa;--font:"Plus Jakarta Sans","Segoe UI",Arial,sans-serif;--mono:"JetBrains Mono",Consolas,monospace}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{background:var(--bg);color:var(--ink);font:400 1.0625rem/1.65 var(--font);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--sky);outline-offset:3px;border-radius:6px}
+.w{max-width:1140px;margin:0 auto;padding:0 1.25rem}
+h1,h2,h3{letter-spacing:-.02em;line-height:1.12}
+nav.bar{position:sticky;top:0;z-index:20;background:rgba(5,11,26,.88);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+nav.bar .w{display:flex;align-items:center;justify-content:space-between;height:68px;gap:1rem}
+.logo{font-weight:800;font-size:1.15rem;text-decoration:none;display:flex;align-items:center;gap:.6rem}
+.logo b{color:var(--acc2);font:700 1.3rem var(--mono)}
+.links{display:flex;gap:2rem;height:100%}
+.links a{text-decoration:none;color:var(--mut);font-weight:500;display:flex;align-items:center;border-bottom:2px solid transparent;font-size:.98rem}
+.links a:hover,.links a.on{color:var(--ink);border-color:var(--acc2)}
+.btn{display:inline-flex;align-items:center;gap:.55rem;padding:.85rem 1.5rem;border-radius:11px;font-weight:700;text-decoration:none;border:1px solid transparent;transition:transform .15s,box-shadow .15s;font-size:1rem}
+.btn:hover{transform:translateY(-2px)}
+.btn.p{background:linear-gradient(135deg,#2563eb,#4f7df0);color:#fff;box-shadow:0 8px 24px rgba(37,99,235,.35)}
+.btn.g{border-color:#33487a;background:transparent}
+.btn.g:hover{border-color:var(--sky)}
+.btn.s{padding:.6rem 1.2rem}
+.hero{position:relative;padding:3.5rem 0 5.5rem;overflow:hidden}
+.hero::before{content:"";position:absolute;right:-8%;top:-10%;width:720px;height:720px;background:radial-gradient(circle,rgba(79,70,229,.28),rgba(37,99,235,.12) 45%,transparent 70%);pointer-events:none}
+.hero .w{display:grid;grid-template-columns:1.05fr .95fr;gap:2.5rem;align-items:center;position:relative}
+.from{display:inline-flex;align-items:center;gap:.6rem;border:1px solid var(--line);background:var(--card);padding:.35rem .9rem;border-radius:10px;font-size:.92rem;font-weight:500;margin-bottom:1.5rem}
+.flag{display:inline-flex;width:20px;height:14px;border-radius:2px;overflow:hidden}
+.flag i{flex:1;background:#d91023}.flag i:nth-child(2){background:#fff}
+.hero h1{font-size:clamp(2.3rem,5.4vw,3.9rem);font-weight:800;margin-bottom:.6rem}
+.grad{background:linear-gradient(90deg,var(--sky),var(--acc2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero h2.sub{font-size:clamp(1.35rem,2.6vw,1.9rem);font-weight:700;margin-bottom:1.2rem}
+.hero p.lead{color:#c3cfe8;max-width:50ch;margin-bottom:1.8rem}
+.cta{display:flex;flex-wrap:wrap;gap:.8rem;margin-bottom:2.2rem}
+.stack-t{color:var(--mut);font-size:.92rem;font-weight:600;margin-bottom:.8rem}
+.tiles{display:flex;flex-wrap:wrap;gap:.7rem}
+.tile{width:64px;height:64px;border-radius:14px;background:var(--card);border:1px solid var(--line);display:grid;place-items:center;text-align:center;font:600 .72rem/1.2 var(--font);color:var(--mut);padding:.3rem}
+.tile b{display:block;font:700 1.2rem var(--mono);color:var(--sky);margin-bottom:.1rem}
+.pic{position:relative;width:100%;max-width:440px;margin-left:auto}
+.pic::before{content:"";position:absolute;inset:-6% -4% 4% 8%;background-image:radial-gradient(rgba(129,140,248,.55) 1.5px,transparent 1.6px);background-size:16px 16px;-webkit-mask-image:radial-gradient(circle at 80% 15%,#000,transparent 45%);mask-image:radial-gradient(circle at 80% 15%,#000,transparent 45%)}
+.pic img{position:relative;display:block;width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 15%;border-radius:30px;border:1px solid #2a3f78;box-shadow:0 0 0 8px rgba(59,130,246,.07),0 30px 70px rgba(37,99,235,.35)}
+.pic .ph{display:none}
+.code{position:absolute;bottom:5%;left:-11%;width:250px;background:rgba(8,19,42,.95);border:1px solid #2a3f78;border-radius:14px;box-shadow:0 22px 44px rgba(0,0,0,.5);font:400 .8rem/1.7 var(--mono);overflow:hidden}
+.code .bar2{display:flex;align-items:center;gap:.4rem;padding:.55rem .8rem;border-bottom:1px solid var(--line);color:var(--mut);font-size:.75rem}
+.code .bar2 i{width:9px;height:9px;border-radius:50%;background:#ef4444}.code .bar2 i:nth-child(2){background:#f59e0b}.code .bar2 i:nth-child(3){background:#22c55e;margin-right:.5rem}
+.code pre{font:inherit;padding:.7rem .9rem;white-space:pre;overflow:hidden}
+.code .n{color:#4a5d8c;margin-right:.8rem;user-select:none}.code .k{color:#7aa7ff}.code .s{color:#fbbf77}.code .v{color:#4ade80}
+.arrow{position:absolute;right:2%;bottom:2%;width:64px;opacity:.8}
+.rv{opacity:0;transform:translateY(16px);animation:up .8s .1s forwards}.pic.rv{animation-delay:.3s}
+@keyframes up{to{opacity:1;transform:none}}
+section.s{padding:4.5rem 0;border-top:1px solid var(--line)}
+section.alt{background:var(--bg2)}
+.pill{display:inline-block;border:1px solid #2a3f78;background:rgba(59,130,246,.1);color:var(--sky);font-weight:600;font-size:.85rem;padding:.2rem .8rem;border-radius:8px;margin-bottom:1rem}
+.hd{margin-bottom:2.2rem}.hd.c{text-align:center}
+.hd h2{font-size:clamp(1.7rem,3.4vw,2.5rem);font-weight:800}
+.hd p{color:var(--mut);margin-top:.5rem}
+.about{display:grid;grid-template-columns:1fr 1.2fr;gap:3rem;align-items:center}
+.about h2{font-size:clamp(1.6rem,3vw,2.2rem);font-weight:800;margin-bottom:1rem}
+.about p{color:var(--mut);margin-bottom:1.4rem}
+.facts{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--line);border-radius:18px;background:var(--card);overflow:hidden}
+.fact{display:flex;gap:1rem;align-items:center;padding:1.4rem;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+.fact:nth-child(2n){border-right:0}.fact:nth-child(n+3){border-bottom:0}
+.ic{flex:none;width:52px;height:52px;border-radius:13px;background:linear-gradient(135deg,rgba(59,130,246,.25),rgba(129,140,248,.18));border:1px solid #2a3f78;color:var(--sky);display:grid;place-items:center;font:700 1.15rem var(--mono)}
+.fact b{display:block;font-size:1.05rem;line-height:1.25}.fact span{color:var(--mut);font-size:.92rem}
+.skills{display:grid;grid-template-columns:repeat(5,1fr);gap:1rem}
+.sk{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:1.5rem 1rem;text-align:center;transition:border-color .2s,transform .2s}
+.sk:hover{border-color:var(--acc2);transform:translateY(-3px)}
+.sk .ic{margin:0 auto .9rem;background:none;border:0;font-size:1.7rem;width:auto;height:auto}
+.sk h3{font-size:1.05rem;margin-bottom:.3rem}.sk p{color:var(--mut);font-size:.9rem}
+.feat{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}
+#proyectos .shot{height:145px}
+#proyectos .fc p{min-height:8em}
+.fc{background:var(--card);border:1px solid #243a6b;border-radius:18px;overflow:hidden;display:flex;flex-direction:column}
+.shot{height:150px;background:linear-gradient(135deg,#0f2150,#1e1b6b);padding:1rem 1.2rem;font:400 .8rem/1.7 var(--mono);color:#b9c7ee;border-bottom:1px solid var(--line);overflow:hidden}
+.shot .k{color:#7aa7ff}.shot .s{color:#fbbf77}.shot .v{color:#4ade80}
+.fc .in{padding:1.2rem 1.3rem 1.4rem}
+.fc h3{font-size:1.2rem;margin-bottom:.4rem}.fc p{color:var(--mut);font-size:.95rem;margin-bottom:.9rem}
+.tags{display:flex;flex-wrap:wrap;gap:.45rem}.tags span{border:1px solid var(--line);border-radius:999px;padding:.1rem .7rem;font-size:.82rem;color:var(--mut)}
+.hk{display:flex;gap:1.4rem;align-items:center;background:linear-gradient(135deg,#0c1f4f,#1b1a63);border:1px solid #2a3f78;border-radius:18px;padding:1.6rem 1.8rem;margin-bottom:1.2rem}
+.hk h3{font-size:1.3rem;margin-bottom:.4rem}.hk p{color:#c3cfe8;font-size:.97rem;margin-bottom:.9rem;max-width:62ch}.hk .btn{flex:none}
+@media (max-width:700px){.hk{flex-direction:column;align-items:flex-start}}
+.note{margin-top:1.6rem;text-align:center;color:var(--mut);font-size:.97rem}
+.certs{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:.7rem}
+.cert{display:flex;gap:.9rem;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:.75rem 1rem}
+.cert i{flex:none;width:38px;height:38px;border-radius:10px;display:grid;place-items:center;font:700 .78rem var(--font);font-style:normal;background:rgba(96,165,250,.14);color:var(--sky)}
+.cert.o i{background:rgba(251,146,60,.15);color:#fb923c}
+.cert b{display:block;font-size:.96rem;line-height:1.3}.cert small{color:var(--mut)}
+.jobs{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem}
+.job{background:var(--card);border:1px solid var(--line);border-top:3px solid var(--acc);border-radius:14px;padding:1.2rem}
+.job h3{font-size:1.02rem;margin-bottom:.2rem}.job .m{color:var(--sky);font-size:.85rem;font-weight:600;margin-bottom:.5rem}.job p{color:var(--mut);font-size:.92rem}
+.final{background:linear-gradient(135deg,#0c1f4f,#1b1a63);border:1px solid #2a3f78;border-radius:24px;padding:3.2rem 2rem;text-align:center}
+.final h2{font-size:clamp(1.7rem,4vw,2.6rem);font-weight:800;margin-bottom:.7rem}
+.final p{color:#c3cfe8;max-width:50ch;margin:0 auto 1.7rem}.final .cta{justify-content:center;margin:0}
+footer{border-top:1px solid var(--line);padding:2rem 0;color:var(--mut);font-size:.93rem;text-align:center}
+.evidence{color:#93c5fd;display:inline-block;font-size:.88rem;font-weight:700;margin-top:.5rem;text-decoration:underline;text-underline-offset:3px}.cert-note{color:var(--mut);font-size:.85rem;line-height:1.5;margin-top:.2rem}.account{white-space:nowrap}.account:hover{border-color:var(--sky)}
+@media (max-width:980px){.skills{grid-template-columns:repeat(3,1fr)}.jobs{grid-template-columns:1fr 1fr}.feat{grid-template-columns:1fr}}
+@media (max-width:860px){.links{display:none}.hero .w,.about{grid-template-columns:1fr}.pic{margin:1.5rem auto 0;max-width:380px}.code{width:210px;left:-3%;bottom:4%;font-size:.7rem}.hero{padding:2.2rem 0 3.5rem}}
+@media (max-width:560px){.skills,.jobs,.facts{grid-template-columns:1fr 1fr}.jobs,.facts{grid-template-columns:1fr}.fact{border-right:0!important;border-bottom:1px solid var(--line)!important}.fact:last-child{border-bottom:0!important}.arrow,.code{display:none}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.rv{animation:none;opacity:1;transform:none}.btn,.sk{transition:none}}
+
+/* MRL / Leonhardt · project imagery, bilingual switch, and honest skill groups */
+.brandtag{font:700 .9rem/1.3 var(--mono);letter-spacing:.09em;color:#a5beff;margin:.6rem 0 1.2rem}
+.brandtag span{color:#55e3d1}
+.lang-tools{display:flex;gap:.5rem;align-items:center;flex:none}
+.lang-switch{display:inline-flex;border:1px solid #33487a;border-radius:10px;padding:3px;background:#071128;gap:3px}
+.lang-switch button{font:750 .76rem var(--font);border:0;background:none;color:#a5b5d4;padding:.42rem .55rem;border-radius:6px;cursor:pointer}
+.lang-switch button.active{background:#244d99;color:#fff}
+.skill-pair{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;max-width:1020px;margin:auto}
+.skill-panel{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:1.6rem}
+.skill-panel h3{font-size:1.2rem;margin-bottom:.5rem}.skill-panel p{font-size:.94rem;color:var(--mut);margin-bottom:1rem}
+.skill-tags{display:flex;flex-wrap:wrap;gap:.6rem}
+.skill-tags span{display:inline-flex;padding:.43rem .85rem;border-radius:999px;background:#142b53;border:1px solid #355081;color:#dbeafe;font-size:.88rem;font-weight:600}
+.skill-tags.learning span{background:#0c2034;border-color:#285b62;color:#b8f3e9}
+#proyectos .shot{height:220px;display:flex;flex-direction:column;justify-content:center;gap:.4rem}
+#proyectos .fc p{min-height:6.7em}
+#proyectos .shot.has-photo{padding:0;position:relative;background:#0a1530}
+.project-image{width:100%;height:100%;object-fit:cover;object-position:center;display:block;transition:transform .3s}
+.project-shot-link:hover .project-image{transform:scale(1.035)}
+.project-shot-link{position:relative;display:block;width:100%;height:100%;overflow:hidden}
+.project-shot-link .image-label{position:absolute;right:10px;bottom:10px;background:#071128d9;border:1px solid #3c5382;border-radius:8px;padding:.2rem .55rem;color:#fff;font:700 .72rem var(--font)}
+.placeholder-shot{display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;gap:.6rem;height:100%;color:#cfdbf6}
+.placeholder-shot b{font-size:1.55rem;letter-spacing:-.02em;color:#fff}.placeholder-shot small{font:500 .82rem var(--mono);color:#93c5fd}
+#projects-list .in .evidence{margin-right:1rem}
+.project-gallery{display:flex;gap:.55rem;flex-wrap:wrap;margin-top:.65rem;align-items:center}
+.project-gallery a{display:inline-flex;align-items:center;gap:.35rem;padding:.3rem .55rem;border-radius:8px;background:#132954;border:1px solid #2c4580;font-size:.8rem;text-decoration:none;color:#bed6ff}
+.project-gallery a:hover{background:#1b396f;color:#fff}
+.preview-banner{position:sticky;top:68px;z-index:18;background:#123e5e;color:#ecfeff;border-bottom:1px solid #5eead4;padding:.65rem 1rem;text-align:center;font-weight:700}
+.cert .evidence{margin:.2rem 0 0;font-size:.8rem}
+.cert{align-items:flex-start}
+@media(max-width:980px){.skill-pair{grid-template-columns:1fr}}
+@media(max-width:860px){.lang-tools{margin-left:auto}.account{font-size:.85rem;padding:.55rem .75rem}}
+@media(max-width:520px){.lang-switch button{padding:.35rem .4rem}.account{font-size:0}.account::after{content:'⚙';font-size:1.15rem}}
+
+/* Certificaciones verificadas, con vistas previas ligeras */
+.cert{position:relative;overflow:hidden}
+.cert-preview{display:block;margin:0 0 .7rem;max-width:220px;width:100%;aspect-ratio:1.5;object-fit:contain;object-position:center;background:#f5f7fb;border-radius:9px;padding:.35rem}
+.cert-featured::before{content:"DESTACADO";font-size:.61rem;letter-spacing:.08em;color:#7bdac2;position:absolute;right:12px;top:10px}
+#projects-list .project-image{object-fit:cover;object-position:center top}
+@media(max-width:700px){.cert-preview{max-width:100%;height:110px}.cert-featured::before{font-size:.52rem}}
+
+.cert>div{min-width:0;flex:1}
+.cert small{display:block;margin:.35rem 0 0;font-size:.83rem;line-height:1.4}
+.cert .evidence{display:inline-block;margin-top:.5rem;font-size:.83rem;line-height:1.5;white-space:normal}
+.cert-featured{padding-top:1.45rem}
+.cert-featured::before{top:.32rem;right:.8rem;opacity:.95}
+.cert-preview{max-width:235px;max-height:170px}
+</style>
 </head>
 <body>
-    <h1>Bienvenido a mi portafolio</h1>
-
-    <h2>Sobre mí</h2>
-    <p>
-        Soy estudiante de Ingeniería de Software
-        con Inteligencia Artificial en SENATI.
-    </p>
-
-    <h2>Mis objetivos</h2>
-    <p>
-        Aprender programación, crear aplicaciones
-        y trabajar en una empresa tecnológica.
-    </p>
+<nav aria-label="Principal" class="bar"><div class="w">
+<a class="logo" href="#inicio"><b>&lt;/&gt;</b>Luis Eduardo</a>
+<div class="links"><a class="on" data-en="Home" href="#inicio">Inicio</a><a data-en="About" href="#sobre-mi">Sobre mí</a><a data-en="Skills" href="#habilidades">Habilidades</a><a data-en="Projects" href="#proyectos">Proyectos</a><a data-en="Certificates" href="#destacado">Certificados</a><a data-en="Experience" href="#experiencia">Experiencia</a><a data-en="Contact" href="#contacto">Contacto</a><a data-en="My account" href="admin.html">Mi cuenta</a></div>
+<div class="lang-tools"><div aria-label="Idioma / Language" class="lang-switch" role="group"><button aria-pressed="true" class="active" id="lang-es" type="button">ES</button><button aria-pressed="false" id="lang-en" type="button">EN</button></div>
+<a aria-label="Mi cuenta: administrar portafolio" class="btn g s account" data-en="⚙ My account" href="admin.html">⚙ Mi cuenta</a></div>
+</div></nav>
+<header class="hero" id="inicio"><div class="w">
+<div class="rv">
+<span class="from"><span aria-hidden="true" class="flag"><i></i><i></i><i></i></span><span data-en="Based in Huancayo, Peru">Desde Perú · Huancayo, Junín</span></span>
+<div class="brandtag"><span>MRL</span> · LEONHARDT</div>
+<h1><span data-en="Hi, I’m">Hola, soy</span><br/><span class="grad">Luis Eduardo</span></h1>
+<h2 class="sub" id="hero-headline">Estudiante de Software e IA</h2>
+<p class="lead" id="hero-intro">Actualmente realizo prácticas de soporte técnico y estoy fortaleciendo mis bases de programación. Busco dar el siguiente paso hacia prácticas de desarrollo de software.</p>
+<div class="cta">
+<a class="btn p" data-en="View projects →" href="#proyectos">Ver mis proyectos →</a>
+<a class="btn g" data-en="Download CV ↓" download="" href="CV_Luis_Eduardo_Mendoza_Roman_Publico.pdf">Descargar CV ↓</a>
+</div>
+<p class="stack-t" data-en="Technologies I am learning">Tecnologías que estoy aprendiendo</p>
+<div class="tiles">
+<div class="tile"><div><b>{ }</b>Java</div></div>
+<div class="tile"><div><b>⇄</b>Redes</div></div>
+<div class="tile"><div><b>OS</b>Windows</div></div>
+<div class="tile"><div><b>Py</b>Python</div></div>
+<div class="tile"><div><b>Git</b>GitHub</div></div>
+</div>
+</div>
+<div class="pic rv">
+<img alt="Luis Eduardo Mendoza Roman" height="550" src="foto.jpg" width="440"/>
+<div aria-hidden="true" class="code"><div class="bar2"><i></i><i></i><i></i>perfil.txt</div><pre><span class="n">01</span> <span class="k">perfil</span>: estudiante
+<span class="n">02</span> <span class="k">carrera</span>: software e IA
+<span class="n">03</span> <span class="k">experiencia</span>: soporte TI
+<span class="n">04</span> <span class="k">meta</span>: desarrollo
+<span class="n">05</span> <span class="v">aprendiendo cada día</span></pre></div>
+<svg aria-hidden="true" class="arrow" fill="none" stroke="#818cf8" stroke-linecap="round" stroke-width="2" viewbox="0 0 64 80"><path d="M10 74C-2 50 10 22 44 10"></path><path d="M34 4l11 6-8 10"></path></svg>
+</div>
+</div></header>
+<main>
+<section class="s alt" id="sobre-mi"><div class="w about">
+<div>
+<span class="pill" data-en="About me">Sobre mí</span>
+<h2 data-en="Learning, practicing, and building solutions">Aprendo, practico y construyo soluciones</h2>
+<p id="about-text">Estudio Ingeniería de Software con Inteligencia Artificial en el Programa de Aprendizaje Dual de SENATI Huancayo. Mi experiencia actual es en soporte técnico: instalación, configuración y mantenimiento de equipos.</p>
+<a class="btn g" data-en="View my experience" href="#experiencia">Ver mi experiencia</a>
+</div>
+<div class="facts">
+<div class="fact"><div class="ic">🎓</div><div><b>Estudiante de Software</b><span id="current-edu">4.º semestre en SENATI</span></div></div>
+<div class="fact"><div class="ic" id="cert-count">11</div><div><b>Certificaciones</b><span>Cisco y Oracle Academy</span></div></div>
+<div class="fact"><div class="ic">⚡</div><div><b>Entusiasta de la IA</b><span>Explorando aplicaciones reales</span></div></div>
+<div class="fact"><div class="ic">👥</div><div><b>Abierto a oportunidades</b><span id="available-label">Prácticas de software</span></div></div>
+</div>
+</div></section>
+<section class="s" id="formacion"><div class="w">
+<div class="hd c"><span class="pill" data-en="Education">Formación</span><h2 data-en="My academic background">Mi formación académica</h2></div>
+<div class="jobs" id="edu" style="grid-template-columns:repeat(auto-fit,minmax(280px,380px));justify-content:center"><div class="job"><h3>Ingeniería de Software con Inteligencia Artificial</h3><div class="m">4.º semestre · en curso</div><p>SENATI C.F.P. Huancayo · Programa de Aprendizaje Dual</p></div></div>
+</div></section>
+<section class="s" id="habilidades"><div class="w">
+<div class="hd c"><span class="pill" data-en="Skills">Habilidades</span><h2 data-en="What I use and what I am learning">Lo que aplico y lo que estoy aprendiendo</h2><p data-en="Hands-on experience and technologies I am building skills in, without percentage-based self-ratings.">Experiencia práctica y tecnologías en aprendizaje, sin porcentajes arbitrarios.</p></div>
+<div class="skill-pair">
+<div class="skill-panel"><h3 data-en="Used in practice or projects">He utilizado en prácticas o proyectos</h3><p data-en="Tasks and tools that I have worked with, primarily in IT support and automation.">Tareas y herramientas que he utilizado, principalmente en soporte técnico y automatización.</p>
+<div class="skill-tags"><span>Windows</span><span>PowerShell</span><span data-en="IT support">Soporte técnico</span><span data-en="Hardware diagnostics">Diagnóstico de hardware</span><span data-en="Software installation">Instalación de software</span><span>Git / GitHub</span></div>
+</div>
+<div class="skill-panel"><h3 data-en="Currently learning">Actualmente en aprendizaje</h3><p data-en="Topics and technologies that I am studying or using in student projects.">Tecnologías que estoy estudiando o practicando en proyectos de aprendizaje.</p>
+<div class="skill-tags learning"><span>JavaScript</span><span>Python</span><span>Java</span><span>Kotlin</span><span>Jetpack Compose</span><span>SQL</span><span>HTML / CSS</span><span data-en="AI fundamentals">Fundamentos de IA</span></div>
+</div>
+</div>
+</div></section>
+<section class="s alt" id="destacado"><div class="w">
+<div class="hd"><span class="pill" data-en="Highlights">Lo destacado</span><h2 data-en="What I have learned and certified">Lo que he aprendido y certificado</h2></div>
+<div class="hk"><div class="ic">🚀</div><div><h3 data-en="Transformagob National Hackathon 2026">Hackatón Nacional Transformagob 2026</h3><p data-en="Organized by Peru’s Presidency of the Council of Ministers (PCM), June 12–14, 2026. I participated by presenting a digital innovation proposal focused on real public-sector challenges.">Organizada por la Presidencia del Consejo de Ministros (PCM), del 12 al 14 de junio de 2026. Presenté una propuesta de solución a un desafío de innovación digital para resolver problemas reales de entidades públicas.</p><div class="tags"><span>Gobierno digital</span><span>Innovación</span><span>PCM</span><span>2026</span></div></div><a class="btn g s" data-en="View certificate" href="certificados/hackaton_transformagob_2026.pdf" rel="noopener noreferrer" target="_blank">Ver constancia</a></div>
+<!-- Cuando tengas proyectos en GitHub, agrega aquí tarjetas .fc con nombre, descripción y enlace. -->
+<div class="feat">
+<article class="fc"><div class="shot"><span class="k">public class</span> Main {<br/>  <span class="k">void</span> saludar() {<br/>    System.out.println(<span class="s">"Hola"</span>);<br/>  }<br/>}</div><div class="in"><h3>Java Foundations</h3><p data-en="Introduction to object-oriented programming and Java fundamentals through Oracle Academy.">Fundamentos de programación orientada a objetos con Oracle Academy.</p><div class="tags"><span>Java</span><span>Oracle</span><span>2026</span></div><a class="evidence" data-en="View certificate ↗" href="certificados/oracle_java_foundations.pdf" rel="noopener noreferrer" target="_blank">Ver certificado ↗</a></div></article>
+<article class="fc"><div class="shot"><span class="v">$</span> nmap -sV objetivo<br/><span class="v">$</span> analizar vulnerabilidades<br/><span class="v">$</span> reportar y corregir<br/><span class="k">&gt;&gt;</span> sistema protegido</div><div class="in"><h3>Hacker Ético</h3><p data-en="Fundamentals of cybersecurity and ethical practices through Cisco Networking Academy.">Cómo piensan los atacantes y cómo proteger sistemas de forma legal.</p><div class="tags"><span>Ciberseguridad</span><span>Cisco</span><span>2026</span></div><a class="evidence" data-en="View certificate ↗" href="certificados/cisco_hacker_etico.pdf" rel="noopener noreferrer" target="_blank">Ver certificado ↗</a></div></article>
+<article class="fc"><div class="shot"><span class="k">PC</span> → <span class="k">Switch</span> → <span class="k">Router</span> → <span class="s">Internet</span><br/><br/>IP · DNS · DHCP<br/>Protocolos y direccionamiento</div><div class="in"><h3>Conceptos Básicos de Redes</h3><p data-en="How devices connect and communicate in computer networks.">Cómo se conectan y comunican los dispositivos en una red.</p><div class="tags"><span>Redes</span><span>Cisco</span><span>2025</span></div><a class="evidence" data-en="View certificate ↗" href="certificados/cisco_redes.pdf" rel="noopener noreferrer" target="_blank">Ver certificado ↗</a></div></article>
+</div>
+<div class="hd" style="margin:3rem 0 1.2rem"><h2 data-en="All certificates" style="font-size:1.5rem">Todas mis certificaciones</h2></div>
+<div class="certs" id="certs"><p class="note">Las certificaciones se muestran aquí. Si no aparecen, comprueba que JavaScript esté habilitado.</p></div>
+<p class="note">También estoy preparando repositorios públicos de código, documentación y capturas para mostrar los avances de mis proyectos.</p>
+</div></section>
+<section class="s" id="proyectos"><div class="w">
+<div class="hd c"><span class="pill" data-en="Technical portfolio">Portafolio técnico</span><h2 data-en="Projects and work in progress">Proyectos y trabajos en progreso</h2><p data-en="Learning and automation projects I am developing and documenting.">Experiencias de aprendizaje y automatización que estoy desarrollando y documentando.</p></div>
+<div class="feat" id="projects-list">
+<article class="fc"><a class="project-shot-link" href="imagenes/kit_leonhardt.png" rel="noopener noreferrer" target="_blank"><img alt="Interfaz del Kit de Soporte Leonhardt" class="project-image" src="imagenes/kit_leonhardt.png" style="height:220px" loading="lazy"/></a><div class="in"><h3>Kit de Soporte Leonhardt</h3><p>Herramienta de escritorio para automatizar tareas de soporte Windows. En desarrollo.</p></div></article>
+<article class="fc"><a class="project-shot-link" href="imagenes/app_habitos_inicio.webp" rel="noopener noreferrer" target="_blank"><img alt="Vista principal de la app de hábitos" class="project-image" src="imagenes/app_habitos_portada.webp" style="height:220px" loading="lazy"/></a><div class="in"><h3>App de hábitos y objetivos</h3><p>Prototipo Android con registro diario, rachas e historial visual. En desarrollo.</p></div></article>
+<article class="fc"><a class="project-shot-link" href="imagenes/portafolio_web.png" rel="noopener noreferrer" target="_blank"><img alt="Portafolio web personal" class="project-image" src="imagenes/portafolio_web.png" style="height:220px" loading="lazy"/></a><div class="in"><h3>Portafolio web personal</h3><p>Portafolio bilingüe con certificados y proyectos.</p></div></article>
+</div>
+<p class="note" data-en="I will keep adding public repositories, documentation, and verified demos as the projects advance.">Más adelante añadiré repositorios de código y demostraciones verificables de cada proyecto.</p>
+</div></section>
+<section class="s" id="experiencia"><div class="w">
+<div class="hd c"><span class="pill" data-en="Experience">Experiencia</span><h2 data-en="From helping people to solving technical problems">De atender personas a resolver problemas técnicos</h2></div>
+<div class="jobs" id="jobs">
+<div class="job" style="border-top-color:#34d399"><h3>Practicante de soporte técnico</h3><div class="m">Julio 2026 hasta hoy</div><p>Prácticas en soporte técnico, aplicando mis conocimientos de hardware, redes y herramientas digitales.</p></div>
+<div class="job"><h3>Cevichería El Limoncito Borracho</h3><div class="m">2025 hasta hoy · fines de semana</div><p>Toma de pedidos y apoyo en el servicio de mesas.</p></div>
+<div class="job"><h3>Pollería Fogones</h3><div class="m">2024 · 8 meses</div><p>Manejo de pedidos y apoyo en el salón.</p></div>
+<div class="job"><h3>Ferretería Henry</h3><div class="m">2024 · 8 meses, medio tiempo</div><p>Caja, control de inventario y orden de mercadería.</p></div>
+</div>
+</div></section>
+<section class="s alt" id="contacto"><div class="w"><div class="final">
+<h2 data-en="Have a software opportunity?">¿Tienes una oportunidad en software?</h2>
+<p id="available-text">Estoy buscando oportunidades de prácticas en desarrollo de software, preferentemente remotas, para aprender y aportar a un equipo técnico.</p>
+<div class="cta">
+<a class="btn p" data-en="Connect on LinkedIn" href="https://www.linkedin.com/in/luis-mendoza-293538273/" rel="noopener noreferrer" target="_blank">Conectar en LinkedIn</a>
+<a class="btn g" data-en="Send email" href="mailto:mrluiseduardo72@gmail.com">Enviar correo</a><a class="btn g" data-en="View GitHub" href="https://github.com/Mr-LuisEd" rel="noopener noreferrer" target="_blank">Ver GitHub</a>
+</div>
+</div></div></section>
+</main>
+<footer><div class="w">Huancayo, Junín, Perú · <a href="https://github.com/Mr-LuisEd" rel="noopener noreferrer" target="_blank">GitHub</a> · <a href="https://www.linkedin.com/in/luis-mendoza-293538273/" rel="noopener noreferrer" target="_blank">LinkedIn</a><br/>© <span id="y"></span> Luis Eduardo Mendoza Roman<div style="font:600 .76rem/1.5 monospace;color:#8ea8d8;margin-top:.7rem">MRL · Leonhardt — firma de autor</div></div></footer>
+<script>
+document.getElementById('y').textContent=new Date().getFullYear();
+(function(){var ls=document.querySelectorAll('.links a');if(!('IntersectionObserver' in window))return;
+var o=new IntersectionObserver(function(a){a.forEach(function(x){if(x.isIntersecting){ls.forEach(function(l){l.classList.toggle('on',l.getAttribute('href')==='#'+x.target.id)})}})},{rootMargin:'-45% 0px -50% 0px'});
+document.querySelectorAll('header[id],section[id]').forEach(function(s){o.observe(s)})})();
+</script>
+<script type="application/json" id="portfolio-initial-data">{"education":[{"title":"Ingeniería de Software con Inteligencia Artificial","org":"SENATI C.F.P. Huancayo · Programa de Aprendizaje Dual","date":"4.º semestre · en curso (noviembre de 2026)","desc":"Formación técnica en software e inteligencia artificial.","title_en":"Software Engineering with Artificial Intelligence","org_en":"SENATI Huancayo · Dual Learning Program","date_en":"4th semester · in progress (November 2026)","desc_en":"Technical studies focused on software and AI; degree not yet completed."},{"title":"Ingeniería de Sistemas e Informática (estudios previos)","org":"Universidad Tecnológica del Perú — UTP","date":"Estudios no culminados","desc":"Cursos universitarios cursados antes de ingresar a SENATI.","title_en":"Systems and Informatics Engineering (previous studies)","org_en":"Universidad Tecnológica del Perú — UTP","date_en":"Unfinished studies","desc_en":"Previously completed university courses prior to entering SENATI."}],"certs":[{"title":"Java Foundations — Finalización de curso","org":"Oracle Academy","date":"abril 2026","url":"certificados/oracle_java_foundations.pdf","date_en":"April 2026","title_en":"Java Foundations — Course Completion","category":"programacion","featured":true,"preview":"imagenes/cert_java.webp"},{"title":"Introducción a la Ciencia de Datos","org":"Cisco","date":"marzo 2025","url":"certificados/cisco_ciencia_datos.pdf","date_en":"March 2025","title_en":"Introduction to Data Science","category":"datos","featured":true,"preview":"imagenes/cert_datos.webp"},{"title":"Hacker ético","org":"Cisco Networking Academy","date":"junio 2026","url":"certificados/cisco_hacker_etico.pdf","date_en":"June 2026","title_en":"Ethical Hacker","category":"ciberseguridad","featured":true,"preview":"imagenes/cert_hacker.webp"},{"title":"Introducción a la Ciberseguridad","org":"Cisco","date":"abril 2025","url":"certificados/cisco_ciberseguridad.pdf","date_en":"April 2025","title_en":"Introduction to Cybersecurity","category":"ciberseguridad","featured":false,"preview":""},{"title":"Conceptos básicos de redes","org":"Cisco","date":"junio 2025","url":"certificados/cisco_redes.pdf","date_en":"June 2025","title_en":"Networking Basics","category":"redes","featured":false,"preview":""},{"title":"Introducción al Internet de las Cosas y Transformación Digital","org":"Cisco","date":"marzo 2025","url":"certificados/cisco_iot.pdf","date_en":"March 2025","title_en":"Introduction to IoT and Digital Transformation","category":"redes","featured":false,"preview":""},{"title":"Conceptos Básicos de Hardware de Computadora","org":"Cisco","date":"febrero 2025","url":"certificados/cisco_hardware.pdf","date_en":"February 2025","title_en":"Computer Hardware Basics","category":"soporte","featured":false,"preview":""},{"title":"Uso de Computadoras y Dispositivos Móviles","org":"Cisco","date":"marzo 2025","url":"certificados/cisco_dispositivos_moviles.pdf","date_en":"March 2025","title_en":"Using Computers and Mobile Devices","category":"soporte","featured":false,"preview":""},{"title":"Create Digital Content, Communicate and Collaborate Online","org":"Cisco","date":"marzo 2025","url":"certificados/cisco_contenido_digital.pdf","date_en":"March 2025","category":"digital","featured":false,"preview":""},{"title":"Conciencia digital","org":"Cisco","date":"febrero 2025","url":"certificados/cisco_conciencia_digital.pdf","date_en":"February 2025","title_en":"Digital Awareness","category":"digital","featured":false,"preview":""},{"title":"Get Connected","org":"Cisco","date":"marzo 2022","url":"certificados/cisco_get_connected.pdf","date_en":"March 2022","category":"digital","featured":false,"preview":""}],"jobs":[{"title":"Practicante de soporte técnico","org":"Empresa de venta y soporte de computadoras · Huancayo","date":"Julio de 2026 – actualidad","desc":"Instalación y configuración de Windows y aplicaciones; mantenimiento y diagnóstico de laptops e impresoras; atención de incidencias técnicas.","title_en":"IT Support Intern","org_en":"Computer sales and support company · Huancayo","date_en":"July 2026 – present","desc_en":"Windows and software installation and configuration; laptop and printer maintenance and diagnostics; technical troubleshooting."},{"title":"Atención al cliente (fines de semana)","org":"Cevichería El Limoncito Borracho","date":"2025 – actualidad","desc":"Toma de pedidos, atención al público y colaboración en el servicio.","title_en":"Customer Service (weekends)","org_en":"Cevichería El Limoncito Borracho","date_en":"2025 – present","desc_en":"Taking orders, assisting customers, and supporting service operations."},{"title":"Atención al cliente","org":"Pollería Fogones","date":"2024","desc":"Atención al público, gestión de pedidos y apoyo en el salón.","title_en":"Customer Service","org_en":"Pollería Fogones","date_en":"2024","desc_en":"Customer assistance and order handling."},{"title":"Ayudante de ventas","org":"Ferretería Henry","date":"2024","desc":"Atención al cliente, manejo de caja y apoyo al inventario.","title_en":"Sales Assistant","org_en":"Ferretería Henry","date_en":"2024","desc_en":"Customer assistance, cashier duties, and stock support."}],"profile":{"headline":"Estudiante de Software e Inteligencia Artificial","intro":"Actualmente realizo prácticas de soporte técnico y estoy fortaleciendo mis bases de programación. Busco dar el siguiente paso hacia prácticas de desarrollo de software y aprender con proyectos reales.","about":"Estudio Ingeniería de Software con Inteligencia Artificial en el Programa de Aprendizaje Dual de SENATI Huancayo. Tengo experiencia en instalación, configuración y mantenimiento de equipos. También estoy aprendiendo programación y documentando mis proyectos en GitHub.","availability":"Busco prácticas de desarrollo de software, preferentemente remotas.","headline_en":"Software & AI Student","intro_en":"I am currently gaining hands-on experience in IT support while building my programming skills. I am seeking an opportunity to grow in software development through real projects.","about_en":"I study Software Engineering with Artificial Intelligence at SENATI in Huancayo, Peru, through a dual-learning program. My current experience includes installing, configuring, and maintaining computers. I am learning programming and documenting projects on GitHub.","availability_en":"Open to software development internships, preferably remote."},"projects":[{"title":"Kit de Soporte Leonhardt","desc":"Aplicación de escritorio para preparar equipos Windows: selección de instaladores, seguimiento del proceso, registros y utilidades técnicas. Captura real de la interfaz; continúo probando y mejorando el kit.","stack":["PowerShell","Windows","Automatización","Interfaz de escritorio"],"status":"En desarrollo","url":"","title_en":"Leonhardt Support Toolkit","desc_en":"Desktop toolkit for preparing Windows computers: installer selection, progress monitoring, logs, and technical utilities. Real interface screenshot; testing and improvements are ongoing.","status_en":"In development","image":"imagenes/kit_leonhardt.png","gallery":["imagenes/kit_archivos.png"],"image_alt":"Captura del Kit de Soporte Leonhardt con selección de instaladores y registro de actividad","image_alt_en":"Leonhardt Support Toolkit interface with installer selection and activity logs"},{"title":"App de hábitos y objetivos","desc":"Prototipo móvil de seguimiento de hábitos personales. Las capturas reales muestran registro diario, rachas, progreso, historial, calendario y resumen semanal. El proyecto sigue en desarrollo: widgets, respaldo y otras mejoras están pendientes de validar.","stack":["Kotlin","Jetpack Compose","Android (prototipo)"],"status":"En desarrollo","url":"","title_en":"Habits & Goals Android App","desc_en":"Personal habit-tracking mobile app prototype. Real screenshots show daily logging, streaks, progress, history, calendar and weekly summaries. Still in development: widgets, backup and other improvements require further validation.","status_en":"In development","image":"imagenes/app_habitos_portada.webp","image_alt":"Vista principal del prototipo de la app de hábitos, con resumen de metas y registro diario","gallery":["imagenes/app_habitos_inicio.webp","imagenes/app_habitos_detalle.webp","imagenes/app_habitos_resumen.webp"],"image_alt_en":"Main screen of the habits app prototype showing goals and daily tracking"},{"title":"Portafolio web personal","desc":"Portafolio responsive con versión en español e inglés, certificados y una sección de administración para actualizar contenido mediante GitHub.","stack":["HTML","CSS","JavaScript","GitHub Pages"],"status":"En evolución","url":"https://github.com/Mr-LuisEd/mi-primer-portafolio","title_en":"Personal Portfolio Website","desc_en":"Responsive portfolio with Spanish and English versions, certificates, and an administration page for managing content through GitHub.","status_en":"Evolving","image":"imagenes/portafolio_web.png","image_alt":"Vista de una versión anterior del portafolio web","image_alt_en":"Screenshot of an earlier version of the portfolio website"}],"brand":{"name":"Leonhardt","signature":"M.R.Luis","mark":"MRL"}}</script>
+<script>(function(){
+  'use strict';
+  const $=id=>document.getElementById(id);
+  const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  const items=x=>Array.isArray(x)?x:[];
+  const field=(x,k)=>String((language==='en'&&x?.[k+'_en'])||x?.[k]||'');
+  const joined=(x,keys)=>keys.map(k=>field(x,k)).filter(Boolean).map(esc).join(' · ');
+  const safeHref=value=>{
+    const u=String(value||'').trim();if(!u)return '';
+    if(/^https:\/\//i.test(u)){try{const p=new URL(u);return p.protocol==='https:'?esc(p.href):''}catch{return ''}}
+    return /^(?:certificados|archivos|imagenes)\/[a-zA-Z0-9_.\/-]+$/.test(u)&&!u.includes('..')?esc(u):'';
+  };
+  const safeImage=value=>{const u=String(value||'').trim();return /^imagenes\/[A-Za-z0-9_./-]+\.(?:png|jpg|jpeg|webp)$/.test(u)&&!u.includes('..')?esc(u):''};
+  let data=null;let language='es';
+  try{language=localStorage.getItem('mrl_portfolio_lang')==='en'?'en':'es'}catch(e){}
+  const label=(es,en)=>language==='en'?en:es;
+  function staticTranslations(){
+    document.documentElement.lang=language;
+    document.querySelectorAll('[data-en]').forEach(el=>{
+      if(!el.hasAttribute('data-es'))el.setAttribute('data-es',el.textContent);
+      el.textContent=el.getAttribute(language==='en'?'data-en':'data-es');
+    });
+    const e=$('lang-es'),n=$('lang-en');
+    e.classList.toggle('active',language==='es');n.classList.toggle('active',language==='en');
+    e.setAttribute('aria-pressed',String(language==='es'));n.setAttribute('aria-pressed',String(language==='en'));
+    document.title=language==='en'?'Luis Eduardo Mendoza | Software & AI Student':'Luis Eduardo Mendoza | Estudiante de Software e IA';
+  }
+  function certificates(arr){return items(arr).map(c=>{
+    const url=safeHref(c.url), badge=/oracle/i.test(c.org||'')?'OR':'CS';
+    const thumb=safeImage(c.preview),pic=thumb?`<img class="cert-preview" src="${thumb}" alt="${esc(field(c,'title'))}" loading="lazy">`:'';
+    return `<article class="cert${c.featured?' cert-featured':''}"><i>${badge}</i><div>${pic}<b>${esc(field(c,'title'))}</b><small>${joined(c,['org','date'])}</small>${field(c,'desc')?`<p class="cert-note">${esc(field(c,'desc'))}</p>`:''}${url?`<a class="evidence" href="${url}" target="_blank" rel="noopener noreferrer">${label('Ver certificado ↗','View certificate ↗')}</a>`:''}</div></article>`;
+  }).join('')}
+  function education(arr){return items(arr).map(x=>`<article class="job"><h3>${esc(field(x,'title'))}</h3><div class="m">${esc(field(x,'date'))}</div><p>${joined(x,['org','desc'])}</p>${safeHref(x.url)?`<a class="evidence" target="_blank" rel="noopener noreferrer" href="${safeHref(x.url)}">${label('Ver documento ↗','View document ↗')}</a>`:''}</article>`).join('')}
+  function jobs(arr){return items(arr).map(x=>`<article class="job"><h3>${esc(field(x,'title'))}</h3><div class="m">${joined(x,['org','date'])}</div><p>${esc(field(x,'desc'))}</p></article>`).join('')}
+  function projects(arr){return items(arr).map(p=>{
+    const image=safeImage(p.image),extra=items(p.gallery).map(safeImage).filter(Boolean);
+    const screenshot=image?`<div class="shot has-photo"><a class="project-shot-link" href="${image}" target="_blank" rel="noopener noreferrer" aria-label="${esc(field(p,'image_alt')||p.title)}"><img class="project-image" src="${image}" alt="${esc(field(p,'image_alt')||p.title)}" loading="lazy"><span class="image-label">${label('Ver captura ↗','View screenshot ↗')}</span></a></div>`:`<div class="shot"><div class="placeholder-shot"><b>${esc(field(p,'title'))}</b><small>${esc(items(p.stack).slice(0,2).join(' / '))}</small><small>${label('Imagen pendiente de incorporar','Project screenshot coming soon')}</small></div></div>`;
+    const tags=items(p.stack).map(s=>`<span>${esc(s)}</span>`).join('');
+    const url=safeHref(p.url);
+    return `<article class="fc">${screenshot}<div class="in"><h3>${esc(field(p,'title'))}</h3><p>${esc(field(p,'desc'))}</p><div class="tags">${tags}<span>${esc(field(p,'status'))}</span></div>${url?`<a class="evidence" href="${url}" target="_blank" rel="noopener noreferrer">${label('Ver proyecto ↗','View project ↗')}</a>`:''}${extra.length?`<div class="project-gallery">${extra.map((img,i)=>`<a href="${img}" target="_blank" rel="noopener noreferrer" aria-label="${label('Ver captura','View screenshot')} ${i+2} · ${esc(field(p,'title'))}">${label('Captura','Screenshot')} ${i+2} ↗</a>`).join('')}</div>`:''}</div></article>`;
+  }).join('')}
+  function render(d){
+    data=d;
+    const sections={certs:['certs',certificates],jobs:['jobs',jobs],education:['edu',education],projects:['projects-list',projects]};
+    for(const [key,[id,make]] of Object.entries(sections)){const el=$(id);if(el&&Array.isArray(d[key]))el.innerHTML=make(d[key]);}
+    if(d.profile){
+      const texts={'hero-headline':field(d.profile,'headline'),'hero-intro':field(d.profile,'intro'),'about-text':field(d.profile,'about'),'available-text':field(d.profile,'availability'),'available-label':field(d.profile,'availability')};
+      for(const [id,value] of Object.entries(texts)){const el=$(id);if(el&&value)el.textContent=value;}
+    }
+    if($('cert-count')&&Array.isArray(d.certs))$('cert-count').textContent=String(d.certs.length);
+    if($('current-edu')&&d.education?.[0])$('current-edu').textContent=field(d.education[0],'date');
+  }
+  function changeLanguage(v){language=v;try{localStorage.setItem('mrl_portfolio_lang',language)}catch(e){} staticTranslations();if(data)render(data)}
+  $('lang-es').addEventListener('click',()=>changeLanguage('es'));
+  $('lang-en').addEventListener('click',()=>changeLanguage('en'));
+  staticTranslations();
+  const isPreview=new URLSearchParams(location.search).get('preview')==='1';
+  let draft=null;
+  if(isPreview){try{draft=JSON.parse(localStorage.getItem('mrl_portfolio_draft')||'null')}catch(e){}
+    const banner=document.createElement('div');banner.className='preview-banner';banner.textContent='Vista previa local · no publicada / Local preview · not published';document.querySelector('nav.bar').after(banner);
+    const robots=document.createElement('meta');robots.name='robots';robots.content='noindex,nofollow';document.head.append(robots);
+  }
+  // La copia integrada permite usar la página incluso al abrir index.html directamente (file://).
+  let snapshot=null;
+  try{snapshot=JSON.parse($('portfolio-initial-data')?.textContent||'null')}catch(e){console.warn('No se pudo leer el respaldo local',e)}
+  if(draft){render(draft)}
+  else {
+    if(snapshot)render(snapshot);
+    // Solo en HTTP(S) se consulta el JSON actualizado por «Mi cuenta».
+    // Si la petición falla, se conserva el respaldo visible en vez de «Cargando certificados…».
+    if(/^https?:$/.test(location.protocol)){
+      fetch('./data.json?revision='+Date.now(),{cache:'no-store'})
+       .then(r=>{if(!r.ok)throw Error('data.json HTTP '+r.status);return r.json()})
+       .then(d=>{if(d&&typeof d==='object')render(d)})
+       .catch(e=>{console.warn('Usando contenido de respaldo',e);});
+    }
+  }
+})();</script>
 </body>
 </html>

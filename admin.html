@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Mi cuenta · Portafolio MRL / Leonhardt</title>
+<style>
+:root{--bg:#050b1a;--panel:#0b1731;--panel2:#0e1f41;--line:#243761;--fg:#e8f0ff;--mut:#a5b5d4;--blue:#4a85f8;--green:#34d399;--red:#fb7185}*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 87% 0,#17215a 0,#050b1a 40%);color:var(--fg);font-family:system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.55}a{color:#a4c8ff}button,input,textarea{font:inherit}button{cursor:pointer}.wrap{max-width:1160px;margin:0 auto;padding:1.2rem}.top{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.6rem;padding:.9rem 0 1.5rem}.brand{font-size:1.15rem;font-weight:750;letter-spacing:-.02em}.brand span{color:#8d9aff}.brand small{font-size:.73rem;font-weight:600;color:#95aff1}.inputhint{color:#95a8d0;font-size:.8rem;margin:.3rem 0 0}.topnav{display:flex;align-items:center;gap:.8rem}h1{font-size:clamp(1.6rem,4vw,2.3rem);margin:.1rem 0 .4rem}h2{font-size:1.25rem;margin:0 0 1rem}p{margin:.25rem 0 1rem;color:var(--mut)}.muted{color:var(--mut);font-size:.92rem}.shell{background:rgba(11,23,49,.94);border:1px solid var(--line);border-radius:18px;box-shadow:0 22px 50px #0004;padding:1.3rem}.login{max-width:690px;margin:1.7rem auto}.label{display:block;color:#dbe6ff;font-size:.9rem;font-weight:650;margin:0 0 .35rem}input,textarea{width:100%;background:#071128;color:var(--fg);border:1px solid #355081;border-radius:10px;padding:.76rem .85rem;outline:0}textarea{min-height:96px;resize:vertical}input:focus,textarea:focus{border-color:#93c5fd;box-shadow:0 0 0 3px #60a5fa22}input[type=file]{padding:.7rem}.field{margin:0 0 1.1rem}.btn{border:1px solid var(--line);background:#172d58;color:#f0f5ff;font-weight:700;padding:.73rem 1.15rem;border-radius:10px;display:inline-flex;gap:.55rem;align-items:center;justify-content:center;text-decoration:none}.btn:hover{border-color:#80a8f4}.btn.primary{background:#2563eb;border-color:#3b82f6}.btn.danger{border-color:#6b3347;background:#401d32}.btn:disabled{opacity:.52;cursor:not-allowed}.controls{display:flex;gap:.55rem;flex-wrap:wrap}.note{border:1px solid #38517d;background:#0d2144;border-radius:10px;padding:.8rem 1rem;color:#d2e2ff;font-size:.92rem;margin:1rem 0}.warning{border-color:#735634;background:#2c231d;color:#f9dfbf}.message{min-height:1.4em;color:#d3e4ff;margin:.7rem 0}.message.bad{color:#fda4af}.message.good{color:#6ee7b7}.layout{display:grid;grid-template-columns:225px minmax(0,1fr);gap:1.1rem;align-items:start}.sidebar{display:flex;flex-direction:column;gap:.35rem}.tab{width:100%;text-align:left;border:1px solid transparent;border-radius:10px;padding:.8rem 1rem;background:transparent;color:var(--mut);font-weight:650}.tab:hover,.tab.active{background:#1a3261;color:var(--fg);border-color:#355081}.workspace{min-width:0}.two{display:grid;grid-template-columns: minmax(200px,.8fr) minmax(0,1.4fr);gap:1rem}.items{display:flex;flex-direction:column;gap:.5rem;max-height:610px;overflow:auto}.item{border:1px solid var(--line);background:#071128;border-radius:10px;padding:.72rem;display:flex;justify-content:space-between;gap:.5rem;align-items:center}.item strong{font-size:.9rem;display:block}.item small{color:var(--mut)}.item.selected{border-color:#60a5fa;background:#10234a}.row-buttons{display:flex;gap:.3rem}.small{padding:.37rem .6rem;font-size:.85rem;border-radius:8px}.subbox{border:1px solid var(--line);background:#091632;border-radius:12px;padding:1rem}.toolbar{display:flex;justify-content:space-between;align-items:center;gap:.6rem;flex-wrap:wrap;margin-bottom:1rem}.toolbar h2{margin:0}.filearea{margin-top:1rem;border-top:1px solid var(--line);padding-top:1rem}.hidden{display:none!important}.steps{padding-left:1.4rem;color:var(--mut)}.steps li{margin:.35rem 0}.status{display:inline-flex;align-items:center;gap:.35rem;border:1px solid #2d5d5b;color:#8cf0d3;padding:.2rem .55rem;border-radius:999px;font-size:.77rem;font-weight:650}.foot{padding:1.4rem 0;text-align:center;color:var(--mut);font-size:.8rem}@media(max-width:850px){.layout{grid-template-columns:1fr}.sidebar{flex-direction:row;overflow:auto}.tab{white-space:nowrap}.two{grid-template-columns:1fr}.items{max-height:270px}.wrap{padding:1rem}}@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}} 
+</style>
+</head>
+<body><div class="wrap">
+<header class="top"><div class="brand">&lt;/&gt; <span>Mi cuenta</span> · Luis Eduardo <small>MRL / Leonhardt</small></div><div class="topnav"><a href="index.html" class="btn">← Ver portafolio</a><button id="logout" class="btn hidden" type="button">Cerrar sesión</button></div></header>
+<section id="login" class="shell login">
+  <h1>Administrar mi portafolio</h1><p>Actualiza tus estudios, certificados, experiencia y proyectos, sin modificar archivos de código.</p>
+  <div class="note"><strong>Acceso seguro:</strong> utiliza un token temporal de tu cuenta GitHub autorizado <em>solo</em> para editar el repositorio <code>Mr-LuisEd/mi-primer-portafolio</code>. No se guarda en el navegador ni en el portafolio.</div>
+  <form id="login-form">
+    <div class="field"><label class="label" for="token">Token de GitHub (fine-grained)</label><input id="token" type="password" autocomplete="off" spellcheck="false" required placeholder="github_pat_..." aria-describedby="token-help"></div>
+    <div class="controls"><button class="btn primary" type="submit" id="connect">Entrar a mi cuenta</button><button class="btn" type="button" id="demo">Ver editor de muestra</button></div>
+    <p class="muted" id="token-help">GitHub → Settings → Developer settings → Personal access tokens → Fine-grained tokens. Selecciona <strong>Only select repositories</strong> → <strong>mi-primer-portafolio</strong> → permiso <strong>Contents: Read and write</strong>. Elige vencimiento corto.</p>
+  </form>
+  <p id="login-status" class="message" role="status" aria-live="polite"></p>
+  <div class="note warning"><strong>Precaución:</strong> el enlace «Mi cuenta» es visible, pero nadie puede publicar cambios sin permisos sobre el repositorio. Nunca compartas el token, lo pegues en el código ni lo incluyas en capturas. No cargues DNI, direcciones privadas ni certificados con datos sensibles sin ocultarlos.</div>
+  <p><a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener noreferrer">Crear token en GitHub ↗</a> · <a href="https://docs.github.com/es/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens" target="_blank" rel="noopener noreferrer">Ayuda oficial ↗</a></p>
+</section>
+<section id="dashboard" class="hidden" aria-label="Panel de edición">
+  <div class="toolbar"><div><h1>Panel de edición</h1><p id="session-details">Edita y publica tus cambios.</p></div><div class="controls"><span class="status" id="dirty-state">Sin cambios</span><button class="btn" type="button" id="save-local">Guardar borrador local</button><button class="btn" type="button" id="preview">Vista previa ES / EN</button><button class="btn" type="button" id="reset">Descartar cambios</button><button class="btn primary" id="publish" type="button">Publicar cambios</button></div></div>
+  <div class="layout">
+   <nav class="shell sidebar" aria-label="Secciones del editor"><button class="tab active" data-kind="profile">👤 Presentación</button><button class="tab" data-kind="education">🎓 Estudios</button><button class="tab" data-kind="certs">🏅 Certificados</button><button class="tab" data-kind="jobs">💼 Experiencia</button><button class="tab" data-kind="projects">💻 Proyectos</button><button class="tab" data-kind="documents">📄 Archivos</button></nav>
+   <section class="shell workspace"><div class="toolbar"><h2 id="section-title">Presentación</h2><button type="button" class="btn primary hidden" id="add">+ Agregar</button></div>
+      <p id="section-help" class="muted"></p>
+      <div id="editor-columns" class="two"><div id="items" class="items" aria-label="Elementos existentes"></div><div class="subbox"><form id="editor-form"><div id="form-fields"></div><div class="controls"><button class="btn primary" type="submit">Guardar en borrador</button><button class="btn danger hidden" type="button" id="delete">Eliminar</button></div></form><div id="project-file" class="filearea hidden"><label class="label" for="file-project">Agregar / cambiar imagen principal del proyecto</label><input id="file-project" type="file" accept="image/png,image/jpeg,image/webp,.png,.jpg,.jpeg,.webp"><button id="upload-project" class="btn" type="button" style="margin-top:.65rem">Subir captura del proyecto</button><p class="muted">PNG, JPG o WEBP, hasta 4 MB. La captura será visible para todos cuando publiques el contenido.</p></div><div id="certificate-file" class="filearea hidden"><label class="label" for="file-cert">Adjuntar certificado (PDF)</label><input id="file-cert" type="file" accept="application/pdf,.pdf"><button class="btn" id="upload-cert" type="button" style="margin-top:.65rem">Subir PDF a GitHub</button><p class="muted">El PDF será público. Sube solo documentos sin datos privados. Después publica el borrador para vincularlo.</p></div></div></div>
+      <div id="documents" class="hidden"><p>Reemplaza tu CV público o tu fotografía actual sin editar código. Los archivos se guardarán en GitHub.</p><label class="label" for="file-cv">Nuevo CV público (PDF)</label><input type="file" id="file-cv" accept="application/pdf,.pdf"><button class="btn" id="upload-cv" type="button" style="margin:.65rem 0 1.35rem">Actualizar CV</button><label class="label" for="file-photo">Nueva foto principal (JPG)</label><input type="file" id="file-photo" accept="image/jpeg,.jpg,.jpeg"><button class="btn" id="upload-photo" type="button" style="margin-top:.65rem">Actualizar foto</button><div class="note warning">No se puede subir un CV nuevo automáticamente desde un formulario de estudios: tienes que actualizar también el PDF cuando cambien tus datos académicos.</div></div>
+      <p id="editor-status" class="message" role="status" aria-live="polite"></p>
+   </section>
+  </div>
+  <div class="note">«Guardar borrador local» conserva únicamente textos y rutas de contenido en este navegador, nunca tu token de GitHub. «Vista previa» abre una versión privada de prueba desde los datos locales. «Guardar en borrador» prepara los cambios en el navegador. <strong>«Publicar cambios» los sube a GitHub</strong>, donde quedan registrados como un commit. GitHub Pages puede tardar unos minutos en actualizar el sitio. El modo de muestra no publica nada.</div>
+</section>
+<footer class="foot">Panel para editar el contenido de un repositorio propio. Sin contraseñas incorporadas ni almacenamiento permanente de tokens.</footer>
+</div>
+<script>
+'use strict';
+const OWNER='Mr-LuisEd',REPO='mi-primer-portafolio',BRANCH='main';
+const DRAFT_KEY='mrl_portfolio_draft';
+const API=`https://api.github.com/repos/${OWNER}/${REPO}/contents/`;
+const LABELS={profile:'Presentación',education:'Estudios',certs:'Certificados',jobs:'Experiencia',projects:'Proyectos',documents:'Archivos'};
+const HELP={profile:'Actualiza los textos principales que aparecen en tu portada.',education:'Añade SENATI, UTP, bachilleres y cursos importantes. Indica "en curso" hasta terminar de verdad.',certs:'Añade certificados y, si deseas, un enlace de evidencia o su PDF.',jobs:'Registra experiencia real, fechas y tareas verificables.',projects:'Describe el estado real de tus proyectos y enlaza su código cuando esté disponible.',documents:'Sube únicamente archivos aptos para hacer públicos.'};
+const FIELDS={
+ profile:[['headline','Subtítulo de la portada (ES)','text'],['headline_en','Cover subtitle (EN)','text'],['intro','Presentación corta (ES)','textarea'],['intro_en','Short introduction (EN)','textarea'],['about','Sobre mí (ES)','textarea'],['about_en','About me (EN)','textarea'],['availability','Disponibilidad laboral (ES)','textarea'],['availability_en','Availability (EN)','textarea']],
+ education:[['title','Programa / grado (ES)','text'],['title_en','Program / degree (EN)','text'],['org','Institución (ES)','text'],['org_en','Institution (EN)','text'],['date','Periodo o estado (ES)','text'],['date_en','Period / status (EN)','text'],['desc','Descripción (ES)','textarea'],['desc_en','Description (EN)','textarea'],['url','Enlace a evidencia (opcional)','url']],
+ certs:[['title','Nombre exacto del certificado (ES)','text'],['title_en','Certificate title (EN, opcional)','text'],['org','Emisor / institución','text'],['date','Fecha (ES)','text'],['date_en','Date (EN)','text'],['desc','Descripción (ES)','textarea'],['desc_en','Description (EN)','textarea'],['url','URL o PDF adjunto','url']],
+ jobs:[['title','Cargo (ES)','text'],['title_en','Role (EN)','text'],['org','Empresa / organización (ES)','text'],['org_en','Company / organization (EN)','text'],['date','Periodo (ES)','text'],['date_en','Period (EN)','text'],['desc','Funciones y logros (ES)','textarea'],['desc_en','Responsibilities and outcomes (EN)','textarea']],
+ projects:[['title','Proyecto (ES)','text'],['title_en','Project name (EN)','text'],['desc','Qué hace / qué falta (ES)','textarea'],['desc_en','What it does / next steps (EN)','textarea'],['stack','Tecnologías (separadas por comas)','text'],['status','Estado actual (ES)','text'],['status_en','Status (EN)','text'],['url','Repositorio o demo (opcional)','url'],['image','Ruta de imagen principal (ej. imagenes/mi_app.png)','image'],['image_alt','Texto alternativo de la imagen (ES)','text'],['image_alt_en','Image alt text (EN)','text'],['gallery','Imágenes adicionales (rutas separadas por comas)','gallery']]
+};
+const $=id=>document.getElementById(id);
+const message=(id,text,bad=false)=>{const el=$(id);el.textContent=text;el.className='message '+(bad?'bad':'good')};
+let token='', sha='', source=null, working=null, kind='profile', selected=0, demo=false;
+const headers=()=>({'Accept':'application/vnd.github+json','Authorization':'Bearer '+token,'X-GitHub-Api-Version':'2022-11-28'});
+const parseData=async res=>{const json=await res.json().catch(()=>({}));if(!res.ok)throw Error(json.message||`GitHub respondió ${res.status}`);return json};
+const enc=str=>{const bytes=new TextEncoder().encode(str);let bin='';for(let i=0;i<bytes.length;i+=32768)bin+=String.fromCharCode(...bytes.slice(i,i+32768));return btoa(bin)};
+const dec=str=>{const bin=atob(String(str).replace(/\s/g,''));return new TextDecoder().decode(Uint8Array.from(bin,c=>c.charCodeAt(0)))};
+const normalize=d=>{for(const k of ['education','certs','jobs','projects'])if(!Array.isArray(d[k]))d[k]=[];if(!d.profile)d.profile={};return d};
+function cleanUrl(value){const v=(value||'').trim();if(!v)return '';if(/^(https?:\/\/)/i.test(v)){try {let u=new URL(v); if(['http:','https:'].includes(u.protocol))return v;}catch{}}if(/^(certificados|archivos|imagenes)\/[a-z0-9_.\/-]+$/i.test(v)&&!v.includes('..'))return v;throw Error('El enlace debe comenzar por https:// o ser una ruta de certificados/ o archivos/.')}
+function changed(){return JSON.stringify(source)!==JSON.stringify(working)}
+function updateDirty(){const dirty=changed();$('dirty-state').textContent=dirty?'Cambios sin publicar':'Sin cambios';$('dirty-state').style.color=dirty?'#fbd38d':'#8cf0d3';$('publish').disabled=demo||!dirty}
+async function request(path,options={}){return parseData(await fetch(API+path,{headers:headers(),cache:'no-store',...options}));}
+async function loadFromGitHub(){const file=await request('data.json?ref='+BRANCH);sha=file.sha;return normalize(JSON.parse(dec(file.content)));}
+$('login-form').addEventListener('submit',async e=>{
+ e.preventDefault();if(location.protocol!=='https:'){message('login-status','Por seguridad, entra desde la dirección HTTPS de GitHub Pages para iniciar sesión. Usa «Ver editor de muestra» para probarlo localmente.',true);return}const typed=$('token').value.trim();if(!typed){message('login-status','Introduce tu token.',true);return} $('connect').disabled=true;message('login-status','Comprobando acceso...');
+ try{
+  token=typed;const usr=await parseData(await fetch('https://api.github.com/user',{headers:headers()}));
+  if((usr.login||'').toLowerCase()!==OWNER.toLowerCase())throw Error('Este token no pertenece al propietario esperado: '+OWNER);
+  const repo=await parseData(await fetch(`https://api.github.com/repos/${OWNER}/${REPO}`,{headers:headers()}));
+  if(!repo.permissions?.push)throw Error('Tu token no tiene permisos de escritura en este repositorio.');
+  const data=await loadFromGitHub();demo=false;openDashboard(data,'Conectado como @'+usr.login);
+  $('token').value='';
+ }catch(err){token='';message('login-status','No fue posible entrar: '+err.message,true)}finally{$('connect').disabled=false}
+});
+$('demo').addEventListener('click',async()=>{
+ try{const res=await fetch('./data.json?demo='+Date.now(),{cache:'no-store'});if(!res.ok)throw Error('No se encontró data.json. Abre la página desde un servidor web, no con doble clic en el archivo.');const d=normalize(await res.json());demo=true;token='';sha='';openDashboard(d,'Modo de muestra · sin conexión ni publicación');}
+ catch(err){message('login-status',err.message,true)}
+});
+function saveLocalDraft(){if(!working)return;localStorage.setItem(DRAFT_KEY,JSON.stringify(working));}
+function openDashboard(d,status){
+  source=structuredClone(d);working=structuredClone(d);
+  try{const saved=JSON.parse(localStorage.getItem(DRAFT_KEY)||'null');if(saved&&JSON.stringify(saved)!==JSON.stringify(d)){
+    if(confirm('Se encontró un borrador de contenido guardado en este navegador. ¿Deseas recuperarlo?'))working=normalize(saved);
+    else localStorage.removeItem(DRAFT_KEY);
+  }}catch(e){/* Almacenamiento local opcional */}
+  $('login').classList.add('hidden');$('dashboard').classList.remove('hidden');$('logout').classList.remove('hidden');$('session-details').textContent=status;switchTab('profile');updateDirty();
+}
+$('logout').addEventListener('click',()=>{token='';source=null;working=null;demo=false;sha='';$('dashboard').classList.add('hidden');$('login').classList.remove('hidden');$('logout').classList.add('hidden');$('token').value='';message('login-status','Sesión cerrada.');});
+for(const t of document.querySelectorAll('.tab'))t.addEventListener('click',()=>switchTab(t.dataset.kind));
+function switchTab(name){kind=name;selected=0;document.querySelectorAll('.tab').forEach(x=>x.classList.toggle('active',x.dataset.kind===name));$('section-title').textContent=LABELS[name];$('section-help').textContent=HELP[name];$('add').classList.toggle('hidden',['profile','documents'].includes(name));$('editor-columns').classList.toggle('hidden',name==='documents');$('documents').classList.toggle('hidden',name!=='documents');message('editor-status','');if(name!=='documents')renderEditor();}
+$('add').addEventListener('click',()=>{const o={};for(const [key] of FIELDS[kind])o[key]=kind==='projects'&&['stack','gallery'].includes(key)?[]:'';working[kind].push(o);selected=working[kind].length-1;renderEditor();updateDirty();message('editor-status','Elemento agregado al borrador. Escribe sus datos y guárdalos.');});
+function renderEditor(){
+ const list=$('items');list.replaceChildren();const a=kind==='profile'?[working.profile]:working[kind];
+ if(kind==='profile'){list.innerHTML='<div class="note">Edita los textos de tu página. Los certificados y estudios se gestionan en sus pestañas.</div>';selected=0;}
+ else if(!a.length){list.innerHTML='<p class="muted">Todavía no hay elementos. Pulsa «+ Agregar».</p>';selected=-1}
+ else a.forEach((item,i)=>{
+  const row=document.createElement('div');row.className='item '+(selected===i?'selected':'');
+  const info=document.createElement('div');const title=document.createElement('strong');title.textContent=item.title||'(Sin título)';const small=document.createElement('small');small.textContent=item.org||item.status||'';info.append(title,small);const buttons=document.createElement('div');buttons.className='row-buttons';
+  for(const [label,action] of [['Editar',()=>{selected=i;renderEditor()}],['↑',()=>move(i,-1)],['↓',()=>move(i,1)]]) {const b=document.createElement('button');b.type='button';b.className='btn small';b.textContent=label;b.title=label;b.addEventListener('click',action);buttons.append(b)};
+  row.append(info,buttons);list.append(row);
+ });
+ const form=$('form-fields');form.replaceChildren();$('delete').classList.toggle('hidden',kind==='profile'||selected<0);$('certificate-file').classList.toggle('hidden',kind!=='certs'||selected<0);$('project-file').classList.toggle('hidden',kind!=='projects'||selected<0);
+ if(selected<0)return;
+ const entity=a[selected]||{};
+ for(const [key,label,type] of FIELDS[kind]){
+  const container=document.createElement('div');container.className='field';const lab=document.createElement('label');lab.className='label';lab.textContent=label;lab.htmlFor='field-'+key;
+  const ctrl=document.createElement(type==='textarea'?'textarea':'input');ctrl.id='field-'+key;ctrl.name=key;ctrl.dataset.key=key;
+  if(type!=='textarea')ctrl.type=type==='url'?'text':'text';
+  ctrl.value=(key==='stack'||key==='gallery')?(Array.isArray(entity[key])?entity[key].join(', '):entity[key]||''):(entity[key]||'');
+  if(key==='title'||(kind==='profile'&&key==='headline'))ctrl.required=true;
+  container.append(lab,ctrl);form.append(container);
+ }
+}
+function persistForm(){if(selected<0)return;const target=kind==='profile'?working.profile:working[kind][selected];
+ for(const el of $('editor-form').querySelectorAll('[data-key]')){
+  let value=el.value.trim();if(el.dataset.key==='stack'||el.dataset.key==='gallery')value=value.split(',').map(x=>x.trim()).filter(Boolean);
+  if(el.dataset.key==='image')value=value?cleanUrl(value):'';
+  if(el.dataset.key==='url')value=cleanUrl(value);
+  target[el.dataset.key]=value;
+ }
+}
+$('editor-form').addEventListener('submit',e=>{e.preventDefault();try{persistForm();saveLocalDraft();renderEditor();updateDirty();message('editor-status','Borrador guardado en este navegador. Usa «Vista previa» antes de publicar.')}catch(err){message('editor-status',err.message,true)}});
+$('delete').addEventListener('click',()=>{if(selected<0||!confirm('¿Eliminar este elemento del portafolio?'))return;working[kind].splice(selected,1);selected=Math.min(selected,working[kind].length-1);renderEditor();updateDirty();message('editor-status','Elemento retirado del borrador.');});
+function move(index,delta){const arr=working[kind],j=index+delta;if(j<0||j>=arr.length)return;[arr[index],arr[j]]=[arr[j],arr[index]];selected=j;renderEditor();updateDirty()}
+
+$('save-local').addEventListener('click',()=>{
+ try{if(kind!=='documents'&&selected>=0)persistForm();saveLocalDraft();updateDirty();message('editor-status','Borrador local guardado. Puedes cerrar esta pestaña y recuperarlo después.');}
+ catch(err){message('editor-status','No se pudo guardar: '+err.message,true)}
+});
+$('preview').addEventListener('click',()=>{
+ try{if(kind!=='documents'&&selected>=0)persistForm();saveLocalDraft();updateDirty();const url=new URL('index.html?preview=1',location.href);window.open(url.href,'_blank');message('editor-status','Vista previa abierta. No se ha publicado nada.');}
+ catch(err){message('editor-status','No se pudo abrir vista previa: '+err.message,true)}
+});
+$('reset').addEventListener('click',()=>{if(!changed()||confirm('¿Descartar cambios no publicados?')){working=structuredClone(source);try{localStorage.removeItem(DRAFT_KEY)}catch(e){}switchTab(kind);updateDirty();message('editor-status','Borrador restablecido.')}});
+$('publish').addEventListener('click',async()=>{
+ if(demo)return;try{if(kind!=='documents'&&selected>=0)persistForm();}catch(err){message('editor-status',err.message,true);return}
+ $('publish').disabled=true;message('editor-status','Publicando contenido...');
+ try{
+  const body={message:'Actualizar contenido del portafolio desde Mi cuenta',content:enc(JSON.stringify(working,null,2)+'\n'),branch:BRANCH,sha};
+  const updated=await request('data.json',{method:'PUT',body:JSON.stringify(body)});sha=updated.content.sha;source=structuredClone(working);try{localStorage.removeItem(DRAFT_KEY)}catch(e){}updateDirty();message('editor-status','¡Publicado en GitHub! El sitio puede tardar unos minutos en reflejar los cambios.');
+ }catch(err){message('editor-status',`No se pudo publicar: ${err.message}. Si otro cambio actualizó el archivo, recarga el panel.`,true);updateDirty()}
+});
+function pickFile(id,type){const f=$(id).files?.[0];if(!f)throw Error('Selecciona un archivo.');if(f.size>4*1024*1024)throw Error('El archivo supera 4 MB. Optimiza el PDF o imagen antes de subirlo.');if(type==='pdf'&&f.type!=='application/pdf'&&!f.name.toLowerCase().endsWith('.pdf'))throw Error('El archivo debe ser PDF.');if(type==='jpg'&&!['image/jpeg'].includes(f.type))throw Error('La imagen debe estar en formato JPG.');if(type==='image'&&!['image/png','image/jpeg','image/webp'].includes(f.type))throw Error('La captura debe ser PNG, JPG o WEBP.');return f}
+// Convertir bytes a base64 en bloques sin exponer datos a servicios externos.
+function base64Bytes(arr){let binary='';for(let i=0;i<arr.length;i+=32768)binary+=String.fromCharCode(...arr.slice(i,i+32768));return btoa(binary)}
+async function putBinary(file,path){
+ if(demo)throw Error('El modo de muestra no permite subir archivos.');
+ const old=await fetch(API+path+'?ref='+BRANCH,{headers:headers()});let existing=null;if(old.ok)existing=(await old.json()).sha;else if(old.status!==404){await parseData(old)}
+ const data={message:'Subir archivo del portafolio: '+path,content:base64Bytes(new Uint8Array(await file.arrayBuffer())),branch:BRANCH};if(existing)data.sha=existing;
+ return request(path,{method:'PUT',body:JSON.stringify(data)});
+}
+
+$('upload-project').addEventListener('click',async()=>{
+ try{if(kind!=='projects'||selected<0)throw Error('Selecciona primero un proyecto.');persistForm();const file=pickFile('file-project','image');
+  const safe=file.name.normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9._-]/gi,'_').replace(/^\.+/,'').slice(0,60);
+  const path='imagenes/proyecto_'+Date.now()+'_'+safe;
+  $('upload-project').disabled=true;message('editor-status','Subiendo captura a GitHub...');await putBinary(file,path);
+  working.projects[selected].image=path;saveLocalDraft();renderEditor();updateDirty();message('editor-status','Captura subida. Usa «Vista previa» y luego «Publicar cambios» para enlazarla en el proyecto.');
+ }catch(err){message('editor-status',err.message,true)}finally{$('upload-project').disabled=false}
+});
+$('upload-cert').addEventListener('click',async()=>{
+ try{if(kind!=='certs'||selected<0)throw Error('Primero selecciona un certificado.');persistForm();const file=pickFile('file-cert','pdf');const basename=file.name.normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9._-]/gi,'_').replace(/^\.+/,'').slice(0,75);const path='certificados/'+Date.now()+'_'+basename;
+  $('upload-cert').disabled=true;message('editor-status','Subiendo certificado a GitHub...');await putBinary(file,path);working.certs[selected].url=path;renderEditor();updateDirty();message('editor-status','PDF subido. Pulsa «Publicar cambios» para enlazarlo al certificado.');
+ }catch(err){message('editor-status',err.message,true)}finally{$('upload-cert').disabled=false}
+});
+async function updateDocument(input,type,path){try{const file=pickFile(input,type);message('editor-status','Subiendo '+path+'...');await putBinary(file,path);message('editor-status','Archivo actualizado en GitHub. Puede tardar unos minutos en aparecer en la web.')}catch(err){message('editor-status',err.message,true)}}
+$('upload-cv').addEventListener('click',()=>updateDocument('file-cv','pdf','CV_Luis_Eduardo_Mendoza_Roman_Publico.pdf'));
+$('upload-photo').addEventListener('click',()=>updateDocument('file-photo','jpg','foto.jpg'));
+</script>
+</body>
+</html>

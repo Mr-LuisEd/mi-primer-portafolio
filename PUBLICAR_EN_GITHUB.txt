@@ -1,0 +1,30 @@
+PUBLICAR TU PORTAFOLIO - MRL / LEONHARDT
+======================================
+
+1. Descarga el ZIP y extráelo en tu laptop.
+2. Entra a https://github.com/Mr-LuisEd/mi-primer-portafolio
+3. Pulsa Add file -> Upload files.
+4. Arrastra TODO el contenido de la carpeta descomprimida (index.html,
+   data.json, admin.html, foto.jpg, imagenes/, certificados/, etc.).
+   No subas solo el ZIP y no pongas una carpeta adicional alrededor.
+5. Confirma en Commit changes. Si GitHub no permite reemplazar archivos
+   existentes desde el navegador, puedes usar GitHub Desktop para clonar el
+   repositorio, copiar encima los archivos y hacer Commit + Push.
+6. Ve a Settings -> Pages -> Build and deployment -> Deploy from a branch.
+   Selecciona main y /(root); después Save.
+7. Cuando GitHub muestre el enlace publicado, abre:
+   https://mr-luised.github.io/mi-primer-portafolio/
+8. Comprueba 3 tarjetas de proyectos, 11 certificaciones, fotos, PDF,
+   enlaces, selector ES/EN y la descarga del CV.
+9. Si abres index.html directamente desde Descargas, la versión actual
+   mostrará el contenido inicial sin bloquearse en “Cargando certificados”.
+
+IMPORTANTE
+- El portafolio y tus certificados serán visibles públicamente.
+- No compartas tokens de GitHub, contraseñas ni activadores en tu repositorio.
+- El certificado Oracle escaneado dice ROMANO; revisa la corrección del
+  apellido con el emisor si tu apellido es ROMAN.
+- El certificado cultural Pagapu Wanka no forma parte de esta colección
+  técnica; puedes agregarlo posteriormente a una sección social/cultural.
+- El código del portafolio tiene licencia MIT; los documentos e imágenes
+  NO están incluidos en esa licencia.
