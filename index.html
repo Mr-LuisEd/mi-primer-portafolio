@@ -164,13 +164,319 @@ footer{border-top:1px solid var(--line);padding:2rem 0;color:var(--mut);font-siz
 .cert-featured{padding-top:1.45rem}
 .cert-featured::before{top:.32rem;right:.8rem;opacity:.95}
 .cert-preview{max-width:235px;max-height:170px}
+  
+/* =========================================
+   MRL LEONHARDT - DISEÑO RESPONSIVE
+   PC, LAPTOP, TABLET Y CELULAR
+   ========================================= */
+
+/* Contenedor adaptable a la pantalla */
+.w {
+    width: 100%;
+    max-width: 1800px;
+    margin-inline: auto;
+    padding-inline: clamp(16px, 3vw, 55px);
+}
+
+/* Evitar desbordamientos */
+html, body {
+    max-width: 100%;
+    overflow-x: clip;
+}
+
+img, video {
+    max-width: 100%;
+}
+
+/* Menú de computadora */
+nav.bar .w {
+    min-height: 72px;
+    height: auto;
+    gap: 14px;
+}
+
+.logo {
+    flex-shrink: 0;
+    white-space: nowrap;
+}
+
+.links {
+    gap: clamp(10px, 1.1vw, 22px);
+    align-items: stretch;
+    min-width: 0;
+}
+
+.links a {
+    white-space: nowrap;
+    flex-shrink: 0;
+    font-size: clamp(12px, 0.87vw, 15px);
+}
+
+/* Portada de pantalla completa */
+.hero {
+    min-height: calc(100svh - 72px);
+    display: flex;
+    align-items: center;
+    padding-block: 50px;
+}
+
+.hero .w {
+    width: 100%;
+    grid-template-columns:
+        minmax(0, 1.05fr)
+        minmax(0, 0.95fr);
+    gap: clamp(25px, 4vw, 80px);
+}
+
+.hero .w > * {
+    min-width: 0;
+}
+
+.hero h1 {
+    font-size: clamp(38px, 4.6vw, 82px);
+}
+
+.hero h2.sub {
+    font-size: clamp(21px, 2.2vw, 35px);
+}
+
+.pic {
+    width: 100%;
+    max-width: 540px;
+    margin-inline: auto;
+}
+
+/* Tarjetas y secciones */
+.feat {
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+}
+
+.certs {
+    grid-template-columns:
+        repeat(auto-fit, minmax(min(100%, 270px), 1fr));
+}
+
+.skills, .jobs, .skill-pair {
+    width: 100%;
+}
+
+.fc, .cert, .job, .skill-panel {
+    min-width: 0;
+}
+
+/* Menú desplegable responsive */
+.mobile-menu {
+    display: none;
+    position: relative;
+}
+
+.mobile-menu summary {
+    list-style: none;
+    cursor: pointer;
+    border: 1px solid #33487a;
+    border-radius: 10px;
+    padding: 9px 13px;
+    color: #e9efff;
+    background: #0b1731;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.mobile-menu summary::-webkit-details-marker {
+    display: none;
+}
+
+.mobile-links {
+    position: absolute;
+    top: calc(100% + 12px);
+    right: 0;
+    width: min(310px, 85vw);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    background: #0b1731;
+    border: 1px solid #33487a;
+    border-radius: 14px;
+    box-shadow: 0 18px 40px rgba(0,0,0,.4);
+    z-index: 50;
+}
+
+.mobile-links a {
+    display: block;
+    padding: 11px 14px;
+    border-radius: 8px;
+    color: #e9efff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.mobile-links a:hover,
+.mobile-links a:focus-visible {
+    background: #193763;
+}
+
+/* LAPTOPS Y TABLETS HORIZONTALES */
+@media (max-width: 1350px) {
+    .links {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: block;
+        margin-left: auto;
+    }
+
+    .lang-tools {
+        margin-left: 0;
+    }
+}
+
+/* TABLETS */
+@media (max-width: 1024px) {
+    .hero .w,
+    .about {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .hero {
+        min-height: auto;
+    }
+
+    .pic {
+        max-width: 440px;
+        margin: 25px auto 0;
+    }
+
+    .feat {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+    .jobs {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+    .skills {
+        grid-template-columns:
+            repeat(3, minmax(0, 1fr));
+    }
+}
+
+/* CELULARES */
+@media (max-width: 700px) {
+    .w {
+        padding-inline: 16px;
+    }
+
+    nav.bar .w {
+        min-height: 64px;
+        gap: 8px;
+    }
+
+    .logo {
+        font-size: 14px;
+    }
+
+    .logo b {
+        font-size: 17px;
+    }
+
+    .mobile-menu summary span {
+        display: none;
+    }
+
+    .lang-tools .account {
+        display: none;
+    }
+
+    .hero {
+        padding: 35px 0 55px;
+    }
+
+    .hero .w {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 30px;
+    }
+
+    .hero h1 {
+        font-size: clamp(36px, 9vw, 54px);
+    }
+
+    .hero h2.sub {
+        font-size: clamp(20px, 5.2vw, 27px);
+    }
+
+    .pic {
+        max-width: 370px;
+    }
+
+    .code, .arrow {
+        display: none;
+    }
+
+    .feat,
+    .skills,
+    .jobs,
+    .skill-pair,
+    .about {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .facts {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .cta {
+        flex-direction: column;
+    }
+
+    .cta .btn {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .hk {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    section.s {
+        padding-block: 50px;
+    }
+
+    .final {
+        padding: 30px 18px;
+    }
+}
+
 </style>
 </head>
 <body>
 <nav aria-label="Principal" class="bar"><div class="w">
 <a class="logo" href="#inicio"><b>&lt;/&gt;</b>Luis Eduardo</a>
 <div class="links"><a class="on" data-en="Home" href="#inicio">Inicio</a><a data-en="About" href="#sobre-mi">Sobre mí</a><a data-en="Skills" href="#habilidades">Habilidades</a><a data-en="Projects" href="#proyectos">Proyectos</a><a data-en="Certificates" href="#destacado">Certificados</a><a data-en="Experience" href="#experiencia">Experiencia</a><a data-en="Contact" href="#contacto">Contacto</a><a data-en="My account" href="admin.html">Mi cuenta</a></div>
-<div class="lang-tools"><div aria-label="Idioma / Language" class="lang-switch" role="group"><button aria-pressed="true" class="active" id="lang-es" type="button">ES</button><button aria-pressed="false" id="lang-en" type="button">EN</button></div>
+
+<!-- Menú para tablets y celulares -->
+<details class="mobile-menu">
+    <summary aria-label="Abrir menú">
+        ☰ <span>Menú</span>
+    </summary>
+
+    <div class="mobile-links">
+        <a href="#inicio">Inicio</a>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#destacado">Certificados</a>
+        <a href="#experiencia">Experiencia</a>
+        <a href="#contacto">Contacto</a>
+        <a href="admin.html">Mi cuenta</a>
+    </div>
+</details>
+
+  <div class="lang-tools"><div aria-label="Idioma / Language" class="lang-switch" role="group"><button aria-pressed="true" class="active" id="lang-es" type="button">ES</button><button aria-pressed="false" id="lang-en" type="button">EN</button></div>
 <a aria-label="Mi cuenta: administrar portafolio" class="btn g s account" data-en="⚙ My account" href="admin.html">⚙ Mi cuenta</a></div>
 </div></nav>
 <header class="hero" id="inicio"><div class="w">
